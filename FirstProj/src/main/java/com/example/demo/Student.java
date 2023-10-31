@@ -12,7 +12,7 @@ public class Student {
 	private int aid;
 	private String aname;
 	private String tech;
-	@Autowired // now this Alien class is depended on Laptop class object, object of laptop is created in spring container but by using @Autowire annotation we join this Alien and Laptop class object to each other in spring container
+	@Autowired // now this Student class is depended on Laptop class object, object of laptop is created in spring container but by using @Autowire annotation we join this Alien and Laptop class object to each other in spring container
 	@Qualifier("lap1") // by default Autowire search object by type, but if you want to search object by name in spring container then we use @Qulifier annotation
 	private Laptop laptop;
 	
