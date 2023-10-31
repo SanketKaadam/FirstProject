@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 
 @Component // by default spring use singleton concept so it only create one object in spring container and provide same object whenever required for this class.
 //@Scope(value="prototype") it create every time new object whenever you ask for new object for this class. it only create object when we use getBean method till now it even create object in spring container 
-public class Alien {
+public class S {
 	
 	private int aid;
 	private String aname;
